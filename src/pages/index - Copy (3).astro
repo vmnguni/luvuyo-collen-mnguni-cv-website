@@ -127,10 +127,10 @@ import Layout from '../layouts/Layout.astro';
 
       <p><b>Responsibilities:</b></p>
       <ul>
-        <li>Administered enterprise systems including AWS EC2, Amazon Connect (cloud contact centre), Salesforce CRM, Buster, and CRS+</li>
-        <li>Managed end-to-end user onboarding including account provisioning, system access, permissions, and database privilege assignments</li>
-        <li> Performed Tier 1–3 troubleshooting for infrastructure, applications, connectivity, and access control issues</li>
-        <li>Managed incidents and service requests following formal ITSM escalation procedures</li>
+        <li>Administer enterprise systems: EC2, Amazon Connect, Salesforce, CRS+, Buster</li>
+        <li>End-to-end user onboarding and access provisioning</li>
+        <li>Tier 1–3 troubleshooting across global environments</li>
+        <li>Incident and service request management aligned to SLA targets</li>
         <li>Root cause analysis and preventative actions</li>
         <li>Real-time system monitoring and incident communication</li>
         <li>Operational reporting and service improvement initiatives</li>
@@ -218,212 +218,81 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f7fb;
-  color: #1e293b;
-  line-height: 1.7;
-  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: linear-gradient(135deg, #0b1220, #111827, #0f172a);
+  color: #e5e7eb;
+  line-height: 1.6;
 }
-
-/* NAVBAR */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
-
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 18px;
-  color: #0f172a;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 18px;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 25px;
+  position:sticky;
+  top:0;
+  background:rgba(10,15,25,0.9);
+  backdrop-filter:blur(10px);
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #334155;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #2563eb;
+  margin:0 8px;
+  color:#cbd5e1;
+  text-decoration:none;
 }
 
 .btn {
-  background: #2563eb;
-  color: white !important;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
+  background:#3b82f6;
+  padding:6px 12px;
+  border-radius:8px;
+  color:white !important;
 }
-
-.btn:hover {
-  background: #1d4ed8;
-}
-
-/* CONTAINER */
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
 }
 
-/* HERO */
-
 .hero {
-  text-align: center;
-  background: white;
-  padding: 50px;
-  border-radius: 16px;
-  margin-bottom: 25px;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align:center;
+  padding:60px 20px;
 }
 
 .profile-img {
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #2563eb;
-  margin-bottom: 20px;
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid #3b82f6;
+  margin-bottom:15px;
 }
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 8px;
-  color: #0f172a;
-}
-
-.hero h2 {
-  color: #2563eb;
-  margin-bottom: 15px;
-}
-
-.tagline {
-  max-width: 850px;
-  margin: auto;
-  color: #475569;
-}
-
-.contact {
-  margin-top: 15px;
-  color: #64748b;
-}
-
-/* CARDS */
 
 .card {
-  background: white;
-  border-radius: 16px;
-
-  padding: 30px;
-  margin-bottom: 25px;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  background:rgba(17,24,39,0.85);
+  padding:22px;
+  margin:20px 0;
+  border-radius:14px;
 }
-
-.card h3 {
-  margin-top: 0;
-  color: #0f172a;
-  border-bottom: 3px solid #2563eb;
-  padding-bottom: 10px;
-}
-
-/* SKILLS */
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
 .grid span {
-  background: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid #bfdbfe;
-
-  padding: 8px 12px;
-  border-radius: 8px;
-
-  font-size: 14px;
-  font-weight: 500;
+  background:#1f2937;
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:13px;
 }
-
-/* EXPERIENCE */
 
 .job {
-  border-left: 4px solid #2563eb;
-  padding-left: 20px;
-  margin-top: 25px;
+  border-left:3px solid #3b82f6;
+  padding-left:12px;
+  margin-top:15px;
 }
 
-.job h4 {
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-
-.job ul {
-  margin-top: 10px;
-}
-
-.job li {
-  margin-bottom: 8px;
-}
-
-/* LINKS */
-
-a {
-  color: #2563eb;
-}
-
-a:hover {
-  color: #1d4ed8;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .profile-img {
-    width: 130px;
-    height: 130px;
-  }
-}
+a { color:#60a5fa; }
 
 </style>
