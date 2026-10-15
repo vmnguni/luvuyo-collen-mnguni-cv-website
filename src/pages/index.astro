@@ -5,12 +5,11 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 
 <nav class="navbar">
-  <div class="logo">AWS SysOps Portfolio and CV</div>
+  <div class="logo">IT Operations Portfolio and CV</div>
 
   <div class="nav-links">
     <a href="#summary">Summary</a>
     <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
@@ -26,10 +25,10 @@ import Layout from '../layouts/Layout.astro';
     <img src="/profile.jpg" class="profile-img" alt="Luvuyo Mnguni" />
 
     <h1>Luvuyo Collen Mnguni</h1>
-    <h2>AWS SysOps Engineer | IT Operations & Application Support Specialist</h2>
+    <h2>IT Operations &amp; ERP and CRM Application Support Specialist | AWS SysOps Engineer</h2>
 
     <p class="tagline">
-      AWS SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
+      SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
       technical and application support, and IT service management (ITSM) in multinational environments.
     </p>
 
@@ -46,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
     <h3>Professional Summary</h3>
 
     <p>
-      AWS SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
+      SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
       technical and application support, and IT service management (ITSM) in multinational environments.
       Reduced AWS non-production runtime by up to 99.8% and delivered approximately 40% in monthly cost savings
       through AWS Lambda and Amazon EventBridge automation, RDS scaling, and Auto Scaling Group (ASG) instance
@@ -58,7 +57,9 @@ import Layout from '../layouts/Layout.astro';
       ITIL foundation spanning Incident, Problem, and Change Management, Root Cause Analysis (RCA), escalation
       management, and service desk operations, with hands-on support experience across Salesforce CRM, Amazon
       Connect, AVAYA, and Remedy ITSM (BMC). Brings a decade of enterprise ERP and business-systems support
-      (NICOR, MDA, SAP) and IT business analysis experience prior to specialising in cloud operations.
+      (NICOR, MDA, SAP) and IT business analysis experience prior to specialising in cloud operations, including
+      end-to-end procurement workflow and lease approvals workflow support across banking, accounts, finance,
+      procurement, leasing, accounts payable, and accounts receivable departments.
     </p>
 
     <p>
@@ -69,7 +70,8 @@ import Layout from '../layouts/Layout.astro';
     </p>
 
     <p>
-      AWS Certified Cloud Practitioner (valid to September 2027); 13+ years of total progressive IT experience;
+      AWS Certified Cloud Practitioner (valid to September 2027) and Oracle Fusion Cloud Applications ERP Process
+      Essentials Certified (Rel 1); 13+ years of total progressive IT experience;
       currently completing a BSc Honours in Computing through UNISA, expected 2027.
     </p>
   </section>
@@ -81,6 +83,7 @@ import Layout from '../layouts/Layout.astro';
       <span>Technical &amp; Application Support</span>
       <span>Service Desk &amp; Ticketing (ITSM)</span>
       <span>AWS Cloud Infrastructure</span>
+      <span>Oracle Fusion Cloud Applications (ERP Process Essentials Certified)</span>
       <span>Kubernetes (Amazon EKS)</span>
       <span>Identity &amp; Access Management</span>
       <span>Cloud Automation (Lambda, EventBridge)</span>
@@ -111,7 +114,9 @@ import Layout from '../layouts/Layout.astro';
       Tier 1 to Tier 3 support, ITIL, escalation management
     </p>
     <p>
-      <b>ERP Systems:</b> NICOR, MDA (application support, configuration, issue investigation and troubleshooting); SAP (access and onboarding)
+      <b>ERP Systems:</b> NICOR, MDA (application support, configuration, issue investigation and troubleshooting; end-to-end
+      procurement workflow and lease approvals workflow support across banking, accounts, finance, procurement, leasing,
+      accounts payable, and accounts receivable departments); SAP (access and onboarding)
     </p>
     <p>
       <b>Enterprise Systems & Platforms:</b> Salesforce CRM, Amazon Connect, CRS+, AVAYA, Moodle
@@ -205,6 +210,10 @@ import Layout from '../layouts/Layout.astro';
       <ul>
         <li>Progressed from second-line support, to a systems analyst, to hybrid IT Business Analyst over 10 years, supporting enterprise systems and driving process improvements across a large multi-branch property management organisation</li>
         <li>Provided L1 to L3 application support for ERP systems (NICOR, MDA) and SAP (junior) across multiple business units, investigating and troubleshooting functional and technical issues to resolution</li>
+        <li>Supported the NICOR procurement workflow end-to-end, covering order creation, attachment verification, goods received note (GRN) processing, partial and full receipt handling, and invoice matching through to completion, working closely with buyers, order administrators, and accounts payable</li>
+        <li>Delivered new user training on NICOR ERP, with particular focus on the procurement workflow, from order creation through to invoice processing</li>
+        <li>Supported the NICOR lease approvals workflow end-to-end, covering application processing, credit vetting, lease approval, exception approvals, offer letter issuance and acceptance, and lease verification, working closely with lease administrators, credit analysts, portfolio managers, and portfolio executives</li>
+        <li>Provided cross-departmental ERP support across banking, accounts, finance, procurement, leasing, accounts payable, and accounts receivable functions</li>
         <li>Administered user onboarding, offboarding, and access administration across SAP, SAP B1, and ERP systems (NICOR, MDA)</li>
         <li>Analysed and documented business requirements and conducted UAT and functional test scenarios ahead of go-live deployments</li>
         <li>Acted as liaison between business units, IT teams, and external vendors, translating operational requirements into technical solutions aligned to business needs</li>
@@ -221,46 +230,25 @@ import Layout from '../layouts/Layout.astro';
       </ul>
     </div>
 
-    <!-- MRI -->
-    <div class="job">
-      <h4>Support Account Manager – MRI Software / PropSys | Jun 2015 – Sep 2015</h4>
 
-      <ul>
-        <li>Application support for NICOR and PropSys</li>
-        <li>Bug investigation and escalation to development teams</li>
-        <li>System troubleshooting and configuration support</li>
-        <li>Pre-release testing of enhancements</li>
-        <li>Operational reporting for business decision-making</li>
-      </ul>
-    </div>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="card">
-    <h3>🚀 Key Projects</h3>
-
-    <ul>
-      <li><b>ATI (Academy of Technology and Innovation) Infrastructure Delivery – Valenture Institute:</b> Led end-to-end AWS infrastructure setup for ATI, a new school expansion, creating dedicated AWS Organization accounts for Dev and Production environments, building a Terraform deployment pathway, and coordinating with external partner Silicon Overdrive on architecture, access, and funding proposal development.</li>
-      <li><b>Grafana CloudWatch Monitoring Dashboard – Valenture Institute:</b> Self-taught Grafana with no prior experience or formal training; configured an AWS IAM role and CloudWatch data source connection, then built panel visualizations from scratch for WAF Blocked Requests, RDS read/write latency, RDS database connections, RDS CPU utilisation, and CPU utilisation across all EC2 instances.</li>
-      <li><b>Self-Service ITSM Portal – TransUnion:</b> Built a Remedy-integrated web portal automating ticket creation across 6-country operations, which improved ticket quality and routing.</li>
-    </ul>
   </section>
 
   <!-- EDUCATION -->
   <section id="education" class="card">
     <h3>🎓 Education & Certifications</h3>
 
-    <p><b>BSc Honours in Computing</b> – University of South Africa (UNISA) — In Progress, Expected 2027</p>
-    <p><b>Advanced Diploma, Information Resource Management</b> – UNISA — 2021</p>
-    <p><b>National Diploma, Computer Systems Engineering</b> – University of Johannesburg (UJ) — 2014</p>
-    <p><b>AWS Certified Cloud Practitioner</b> – Amazon Web Services — Issued 2024, valid until September 2027</p>
+    <p><b>BSc Honours in Computing</b> | University of South Africa (UNISA) | In Progress, Expected 2027</p>
+    <p><b>Advanced Diploma, Information Resource Management</b> | UNISA | 2021</p>
+    <p><b>National Diploma, Computer Systems Engineering</b> | University of Johannesburg (UJ) | 2014</p>
+    <p><b>AWS Certified Cloud Practitioner</b> | Amazon Web Services | Issued 2024, valid until September 2027</p>
+    <p><b>Oracle Fusion Cloud Applications ERP Process Essentials Certified</b> | Oracle | Rel 1, Issued September 2026</p>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="card">
     <h3>📫 Contact</h3>
 
+    <p>Portfolio: <a href="https://luvuyo-mnguni-tech-ops.netlify.app">luvuyo-mnguni-tech-ops.netlify.app</a></p>
     <p>GitHub: <a href="https://github.com/vmnguni">github.com/vmnguni</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/luvuyo-mnguni-80414438">linkedin.com/in/luvuyo-mnguni-80414438</a></p>
     <p>Email: <a href="mailto:mnguni.luvuyo@gmail.com">mnguni.luvuyo@gmail.com</a></p>
