@@ -261,13 +261,13 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 
-html {
+:global(html) {
   scroll-behavior: smooth;
 }
 
-body {
+:global(body) {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f7fb;
+  background: #e2e8f0;
   color: #1e293b;
   line-height: 1.7;
   margin: 0;
@@ -284,16 +284,16 @@ body {
   top: 0;
   z-index: 1000;
 
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 .logo {
   font-weight: 700;
   font-size: 18px;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .nav-links {
@@ -304,24 +304,24 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #334155;
+  color: #cbd5e1;
   font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: #2563eb;
+  color: #ffffff;
 }
 
 .btn {
-  background: #2563eb;
-  color: white !important;
+  background: #ffffff;
+  color: #0f172a !important;
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 600;
 }
 
 .btn:hover {
-  background: #1d4ed8;
+  background: #e2e8f0;
 }
 
 /* CONTAINER */
@@ -336,12 +336,12 @@ body {
 
 .hero {
   text-align: center;
-  background: white;
+  background: #0f172a;
   padding: 50px;
   border-radius: 16px;
   margin-bottom: 25px;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(15,23,42,0.25);
 }
 
 .profile-img {
@@ -349,30 +349,30 @@ body {
   height: 170px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #2563eb;
+  border: 5px solid #ffffff;
   margin-bottom: 20px;
 }
 
 .hero h1 {
   font-size: 42px;
   margin-bottom: 8px;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .hero h2 {
-  color: #2563eb;
+  color: #bfdbfe;
   margin-bottom: 15px;
 }
 
 .tagline {
   max-width: 850px;
   margin: auto;
-  color: #475569;
+  color: #cbd5e1;
 }
 
 .contact {
   margin-top: 15px;
-  color: #64748b;
+  color: #94a3b8;
 }
 
 /* CARDS */
@@ -390,7 +390,7 @@ body {
 .card h3 {
   margin-top: 0;
   color: #0f172a;
-  border-bottom: 3px solid #2563eb;
+  border-bottom: 3px solid #1e3a8a;
   padding-bottom: 10px;
 }
 
@@ -403,9 +403,9 @@ body {
 }
 
 .grid span {
-  background: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid #bfdbfe;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  border: 1px solid #c7d2fe;
 
   padding: 8px 12px;
   border-radius: 8px;
@@ -417,7 +417,7 @@ body {
 /* EXPERIENCE */
 
 .job {
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #1e3a8a;
   padding-left: 20px;
   margin-top: 25px;
 }
@@ -438,11 +438,11 @@ body {
 /* LINKS */
 
 a {
-  color: #2563eb;
+  color: #1e3a8a;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: #1e40af;
 }
 
 /* MOBILE */
