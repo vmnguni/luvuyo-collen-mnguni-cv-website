@@ -5,259 +5,363 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 
 <nav class="navbar">
-  <div class="logo">IT Operations Portfolio and CV</div>
+  <div class="logo">Luvuyo Mnguni</div>
 
   <div class="nav-links">
-    <a href="#summary">Summary</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#projects">Projects</a>
+    <a href="#credentials">Credentials</a>
     <a href="#contact">Contact</a>
-
     <a class="btn" href="/cv.pdf" target="_blank">Download CV</a>
   </div>
 </nav>
 
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">AWS SysOps Engineer &middot; IT Operations &amp; Application Support</p>
+    <h1>I'm Luvuyo Mnguni</h1>
+    <p class="hero-tagline">
+      13+ years turning cloud infrastructure, ERP/CRM systems, and IT service management into
+      reliable, cost-efficient operations &mdash; from AWS automation to enterprise application support.
+    </p>
+    <div class="pill-row">
+      <span class="pill">AWS Cloud Ops</span>
+      <span class="pill">ITSM</span>
+      <span class="pill">ERP Support</span>
+      <span class="pill">Automation</span>
+      <span class="pill">Cost Optimisation</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/cv.pdf" target="_blank">Download CV</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat">
+      <div class="stat-num">13+</div>
+      <div class="stat-label">Years IT Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">99.8%</div>
+      <div class="stat-label">AWS RDS Runtime Reduction</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">~40%</div>
+      <div class="stat-label">Monthly AWS Cost Savings</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">26</div>
+      <div class="stat-label">Cloud Environments Managed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">6</div>
+      <div class="stat-label">Countries Supported (TransUnion)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Cloud &amp; ERP Certifications</div>
+    </div>
+  </div>
+</section>
+
 <main class="container">
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="/profile.jpg" class="profile-img" alt="Luvuyo Mnguni" />
+  <!-- ABOUT -->
+  <section id="about" class="card about-card">
+    <h3>About Me</h3>
 
-    <h1>Luvuyo Collen Mnguni</h1>
-    <h2>IT Operations &amp; ERP and CRM Application Support Specialist | AWS SysOps Engineer</h2>
+    <div class="about-grid">
+      <img src="/profile.jpg" class="about-photo" alt="Luvuyo Mnguni" />
 
-    <p class="tagline">
-      SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
-      technical and application support, and IT service management (ITSM) in multinational environments.
-    </p>
+      <div class="about-body">
+        <p>
+          I'm an AWS SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud
+          infrastructure, technical and application support, and IT service management (ITSM) in multinational
+          environments. I reduced AWS non-production runtime by up to 99.8% and delivered approximately 40% in
+          monthly cost savings through Lambda and EventBridge automation, RDS scaling, and Auto Scaling Group
+          instance scheduling across 26 cloud environments.
+        </p>
+        <p>
+          Before specialising in cloud operations, I spent a decade in enterprise ERP and business-systems support
+          (NICOR, MDA, SAP) and IT business analysis, including end-to-end procurement and lease approvals workflow
+          support across banking, accounts, finance, procurement, leasing, accounts payable, and accounts receivable
+          departments. I bring a strong ITIL foundation spanning Incident, Problem, and Change Management, Root
+          Cause Analysis, and service desk operations, with hands-on support experience across Salesforce CRM,
+          Amazon Connect, AVAYA, and Remedy ITSM.
+        </p>
+        <p>
+          I independently learned Grafana and built a CloudWatch-integrated monitoring dashboard from scratch, and
+          developed a self-service ITSM portal that reduced repeat incidents and improved knowledge base quality
+          across a 6-country operation. I'm AWS Certified Cloud Practitioner and Oracle Fusion Cloud Applications
+          ERP Process Essentials Certified, and I'm currently completing a BSc Honours in Computing through UNISA,
+          expected 2027.
+        </p>
 
-    <p class="contact">
-      📍 Roodepoort, Gauteng |
-      📧 mnguni.luvuyo@gmail.com |
-      📞 068 289 8792 |
-      🔗 linkedin.com/in/luvuyo-mnguni-80414438
-    </p>
-  </section>
+        <div class="about-meta">
+          <p><b>Location:</b> Roodepoort, Gauteng, South Africa</p>
+          <p><b>Email:</b> <a href="mailto:mnguni.luvuyo@gmail.com">mnguni.luvuyo@gmail.com</a></p>
+          <p><b>Phone:</b> 068 289 8792</p>
+          <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/luvuyo-mnguni-80414438">linkedin.com/in/luvuyo-mnguni-80414438</a></p>
+        </div>
 
-  <!-- SUMMARY -->
-  <section id="summary" class="card">
-    <h3>Professional Summary</h3>
-
-    <p>
-      SysOps Engineer and IT Operations Specialist with hands-on expertise spanning cloud infrastructure,
-      technical and application support, and IT service management (ITSM) in multinational environments.
-      Reduced AWS non-production runtime by up to 99.8% and delivered approximately 40% in monthly cost savings
-      through AWS Lambda and Amazon EventBridge automation, RDS scaling, and Auto Scaling Group (ASG) instance
-      scheduling across 26 cloud environments.
-    </p>
-
-    <p>
-      Provided Tier 1 to Tier 3 technical support and incident resolution under SLA pressure, backed by a strong
-      ITIL foundation spanning Incident, Problem, and Change Management, Root Cause Analysis (RCA), escalation
-      management, and service desk operations, with hands-on support experience across Salesforce CRM, Amazon
-      Connect, AVAYA, and Remedy ITSM (BMC). Brings a decade of enterprise ERP and business-systems support
-      (NICOR, MDA, SAP) and IT business analysis experience prior to specialising in cloud operations, including
-      end-to-end procurement workflow and lease approvals workflow support across banking, accounts, finance,
-      procurement, leasing, accounts payable, and accounts receivable departments.
-    </p>
-
-    <p>
-      Independently learned Grafana and built a CloudWatch-integrated monitoring dashboard from scratch, including
-      IAM-based data source configuration and custom panel visualizations for key AWS infrastructure metrics.
-      Developed a self-service ITSM portal that reduced repeat incidents and improved knowledge base quality
-      across a 6-country operation.
-    </p>
-
-    <p>
-      AWS Certified Cloud Practitioner (valid to September 2027) and Oracle Fusion Cloud Applications ERP Process
-      Essentials Certified (Rel 1); 13+ years of total progressive IT experience;
-      currently completing a BSc Honours in Computing through UNISA, expected 2027.
-    </p>
-  </section>
-
-  <!-- CORE COMPETENCIES -->
-  <section id="competencies" class="card">
-    <h3>🎯 Core Competencies</h3>
-    <div class="grid">
-      <span>Technical &amp; Application Support</span>
-      <span>Service Desk &amp; Ticketing (ITSM)</span>
-      <span>AWS Cloud Infrastructure</span>
-      <span>Oracle Fusion Cloud Applications (ERP Process Essentials Certified)</span>
-      <span>Kubernetes (Amazon EKS)</span>
-      <span>Identity &amp; Access Management</span>
-      <span>Cloud Automation (Lambda, EventBridge)</span>
-      <span>RDS Scaling &amp; Auto Scaling Groups</span>
-      <span>CloudWatch Monitoring &amp; Alerting</span>
-      <span>Grafana Dashboarding</span>
-      <span>Incident, Problem &amp; Change Management</span>
-      <span>Root Cause Analysis</span>
-      <span>SLA Management</span>
-      <span>Escalation Management</span>
-      <span>ITIL Service Delivery</span>
-      <span>ERP Application Support</span>
-      <span>Business Requirements Analysis &amp; UAT</span>
-      <span>Knowledge Base &amp; Documentation</span>
-      <span>Disaster Recovery</span>
-      <span>Cost Optimisation</span>
-      <span>External Vendor &amp; Partner Coordination</span>
-      <span>Cross-Functional Stakeholder Engagement</span>
+        <h4 class="subheading">Core Competencies</h4>
+        <div class="tag-row">
+          <span class="tag tag-blue">Technical &amp; Application Support</span>
+          <span class="tag tag-navy">Service Desk &amp; Ticketing (ITSM)</span>
+          <span class="tag tag-green">AWS Cloud Infrastructure</span>
+          <span class="tag tag-amber">Oracle Fusion ERP</span>
+          <span class="tag tag-blue">Kubernetes (Amazon EKS)</span>
+          <span class="tag tag-navy">Identity &amp; Access Management</span>
+          <span class="tag tag-green">Cloud Automation</span>
+          <span class="tag tag-amber">RDS Scaling &amp; ASG</span>
+          <span class="tag tag-blue">CloudWatch &amp; Grafana</span>
+          <span class="tag tag-navy">Incident &amp; Change Management</span>
+          <span class="tag tag-green">Root Cause Analysis</span>
+          <span class="tag tag-amber">SLA Management</span>
+          <span class="tag tag-blue">ERP Application Support</span>
+          <span class="tag tag-navy">Business Requirements &amp; UAT</span>
+          <span class="tag tag-green">Disaster Recovery</span>
+          <span class="tag tag-amber">Cost Optimisation</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="card">
-    <h3>🛠️ Technical Skills</h3>
+  <!-- CAREER -->
+  <section id="career" class="card">
+    <h3>Career</h3>
 
-    <p>
-      <b>ITSM & Service Operations:</b> Incident, Problem & Change Management, SLA Management, Root Cause Analysis (RCA),
-      Tier 1 to Tier 3 support, ITIL, escalation management
-    </p>
-    <p>
-      <b>ERP Systems:</b> NICOR, MDA (application support, configuration, issue investigation and troubleshooting; end-to-end
-      procurement workflow and lease approvals workflow support across banking, accounts, finance, procurement, leasing,
-      accounts payable, and accounts receivable departments); SAP (access and onboarding)
-    </p>
-    <p>
-      <b>Enterprise Systems & Platforms:</b> Salesforce CRM, Amazon Connect, CRS+, AVAYA, Moodle
-    </p>
-    <p>
-      <b>ITSM Tools & Collaboration:</b> Remedy ITSM (BMC), Jira, Confluence, ClickUp, GitHub, Slack
-    </p>
-    <p>
-      <b>Cloud Platform (AWS):</b> Amazon EC2 (AMI management, Launch Templates), Amazon RDS (scaling and performance tuning),
-      Amazon S3, IAM, AWS Lambda, AWS Organizations (multi-account setup), AWS CodeDeploy
-    </p>
-    <p>
-      <b>Container Orchestration:</b> Amazon EKS (Elastic Kubernetes Service) cluster patching and maintenance, node group AMI
-      updates, node instance right-sizing, add-on management (Amazon EBS CSI driver), Kubernetes version upgrades
-    </p>
-    <p>
-      <b>Automation & Infrastructure as Code:</b> Event-driven automation (Lambda/EventBridge), Terraform deployment pathways,
-      GitHub repository administration, RDS scaling and ASG instance scheduling
-    </p>
-    <p>
-      <b>Monitoring & Alerting:</b> CloudWatch dashboards and alerting, Grafana dashboard development (CloudWatch data source
-      integration, IAM role configuration, panel visualization design), Slack incident notification integration, proactive
-      incident detection
-    </p>
-    <p>
-      <b>Infrastructure & Systems:</b> Linux patch management, disaster recovery (DR), compliance management, cost optimisation,
-      IT audit support (access controls, change controls)
-    </p>
-    <p>
-      <b>Data & Reporting:</b> SQL (SELECT queries for data extraction and reporting support)
-    </p>
-    <p>
-      <b>Professional Skills:</b> Stakeholder engagement, technical documentation, cross-functional collaboration, business
-      requirements analysis, UAT, user training, vendor management
-    </p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>AWS SysOps Engineer</h4>
+          <p class="timeline-meta">Valenture Institute &middot; January 2025 &ndash; Present</p>
+          <ul>
+            <li>Administer, secure, and optimise AWS cloud infrastructure (EC2, RDS, S3, IAM, Lambda, CloudWatch, EventBridge) across 26 environments supporting UCT Online High School</li>
+            <li>Reduced AWS RDS non-production runtime by 99.8% (744 to 1.33 hours/month) via Lambda and EventBridge automation</li>
+            <li>Engineered weekday-only RDS scheduling, cutting runtime by 70% and contributing to ~40% monthly cost savings</li>
+            <li>Perform monthly patching and maintenance on Amazon EKS clusters, including AMI updates, node right-sizing, and Kubernetes version upgrades</li>
+            <li>Independently learned Grafana and built a CloudWatch-integrated monitoring dashboard from scratch</li>
+            <li>Led infrastructure delivery for ATI (Academy of Technology and Innovation), establishing dedicated AWS Organization accounts and a Terraform deployment pathway</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>System Administrator, FUSE Team</h4>
+          <p class="timeline-meta">TransUnion &middot; June 2022 &ndash; January 2025</p>
+          <ul>
+            <li>Delivered Tier 1 to Tier 3 systems administration and application support across 6 countries: USA, Costa Rica, India, South Africa, Philippines, and Colombia</li>
+            <li>Administered AWS EC2, Amazon Connect CCP, Salesforce CRM, AVAYA, Buster, and CRS+ across multi-region environments</li>
+            <li>Owned incidents and service requests end-to-end in Remedy ITSM, performing Root Cause Analysis on recurring issues</li>
+            <li>Developed a self-service ITSM portal that reduced manual support workload across all 6 countries</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>IT Business Analyst</h4>
+          <p class="timeline-meta">Excellerate Property Services &middot; May 2012 &ndash; May 2022</p>
+          <ul>
+            <li>Progressed from second-line support, to systems analyst, to hybrid IT Business Analyst over 10 years</li>
+            <li>Provided L1 to L3 application support for ERP systems (NICOR, MDA) and SAP across multiple business units</li>
+            <li>Supported the NICOR procurement and lease approvals workflows end to end across banking, accounts, finance, procurement, leasing, accounts payable, and accounts receivable departments</li>
+            <li>Served as the primary point of contact for external IT audit firms on Access Controls and Change Controls, and was the designated Disaster Recovery owner for NICOR</li>
+            <li>Led enterprise document migration to a new intranet platform with zero business disruption</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>Support Account Manager</h4>
+          <p class="timeline-meta">MRI Software / PropSys &middot; June 2015 &ndash; September 2015</p>
+          <ul>
+            <li>Provided application support for NICOR and PropSys, investigating bugs and escalating to development teams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- EXPERIENCE (FULL + NOT SHORTENED) -->
-  <section id="experience" class="card">
-    <h3>💼 Professional Experience</h3>
+  <!-- PROJECTS -->
+  <section id="projects" class="card">
+    <h3>Key Projects</h3>
+    <p class="section-intro">A selection of infrastructure, automation, and ERP initiatives from across my career.</p>
 
-    <!-- VALENTURE -->
-    <div class="job">
-      <h4>AWS SysOps Engineer – Valenture Institute | Jan 2025 – Present</h4>
+    <div class="project-grid">
+      <div class="project">
+        <div class="project-icon icon-blue">&#9729;</div>
+        <h4>AWS RDS Automation &amp; Cost Optimisation</h4>
+        <p class="project-meta">Valenture Institute</p>
+        <p>Fully automated scheduling for non-production RDS environments using Lambda and EventBridge, reducing monthly runtime from 744 hours to 1.33 hours &mdash; a 99.8% reduction &mdash; while improving security via maintenance-window access controls.</p>
+        <p class="project-tags">AWS Lambda &middot; EventBridge &middot; RDS</p>
+      </div>
 
-      <ul>
-        <li>Administer, secure, and optimise AWS cloud infrastructure (EC2, RDS, S3, IAM, Lambda, CloudWatch, EventBridge) across 26 environments supporting UCT Online High School, an ed-tech platform serving thousands of students</li>
-        <li>Reduced AWS RDS non-production runtime by 99.8% (from 744 to 1.33 hours/month) by designing event-driven automation with Lambda and EventBridge, removing manual start/stop processes</li>
-        <li>Engineered weekday-only RDS scheduling (06:00–18:00 SAST) for Dev and QA environments, cutting runtime by 70% and contributing to approximately 40% monthly cost savings</li>
-        <li>Configure RDS scaling activities and Auto Scaling Groups (ASG) to schedule and adjust EC2 instance counts in line with demand, optimising compute capacity and cost efficiency</li>
-        <li>Perform monthly patching and maintenance on Amazon EKS clusters, including reviewing and applying new AMI release versions across node groups, right-sizing node instance types to match performance capacity, updating cluster add-ons including the Amazon EBS CSI driver, and upgrading the Kubernetes version to the latest available release</li>
-        <li>Designed a CloudWatch monitoring, alerting, and dashboarding framework with Slack notification integration to enable proactive incident detection across business-critical platforms</li>
-        <li>Independently learned Grafana through investigative analysis with no formal training, building a monitoring dashboard from scratch: configured an AWS IAM role and connected Grafana to CloudWatch as a data source, then created panel visualizations for WAF Blocked Requests, RDS read/write latency, RDS database connections, RDS CPU utilisation, and CPU utilisation across all EC2 instances</li>
-        <li>Execute system patching, version upgrades, and compliance management across all 26 cloud environments in line with security and operational standards</li>
-        <li>Govern SaaS service reviews, compliance audits, vendor assessments, supporting business continuity</li>
-        <li>Act as escalation point for complex cloud and infrastructure incidents, coordinating with engineering and DS&T Software Engineering teams through to resolution</li>
-        <li>Maintain technical documentation, operational runbooks, and SOPs, and deliver staff training on cloud systems and IT processes</li>
-      </ul>
+      <div class="project">
+        <div class="project-icon icon-green">&#9201;</div>
+        <h4>Weekday RDS Scheduling for Dev &amp; QA</h4>
+        <p class="project-meta">Valenture Institute</p>
+        <p>Weekday-only automation framework for Dev and QA database environments, resulting in a 70% runtime reduction and approximately 40% monthly cost savings on targeted AWS resources.</p>
+        <p class="project-tags">AWS &middot; RDS &middot; Auto Scaling Groups</p>
+      </div>
 
-      <p><b>Key Achievements:</b></p>
-      <ul>
-        <li>Led infrastructure delivery for ATI (Academy of Technology and Innovation), a new online school launched alongside UCT Online High School, establishing dedicated AWS Organization Dev and Production accounts and building a Terraform deployment pathway</li>
-        <li>Coordinated with external development partner Silicon Overdrive on architecture, access provisioning, and permissions, and created and managed GitHub repositories with external architect access for ATI Dev and Production environments</li>
-        <li>Developed an AWS funding implementation proposal and needs analysis framework, and validated deployed infrastructure (EC2, ASG, CodeDeploy, RDS) post-implementation to confirm environment readiness</li>
-      </ul>
+      <div class="project">
+        <div class="project-icon icon-amber">&#128202;</div>
+        <h4>Grafana CloudWatch Monitoring Dashboard</h4>
+        <p class="project-meta">Valenture Institute</p>
+        <p>Self-taught Grafana with no formal training. Configured an AWS IAM role and CloudWatch data source, then built panel visualizations for WAF Blocked Requests, RDS latency, connections, and CPU utilisation across all EC2 instances.</p>
+        <p class="project-tags">Grafana &middot; CloudWatch &middot; IAM</p>
+      </div>
+
+      <div class="project">
+        <div class="project-icon icon-navy">&#127970;</div>
+        <h4>ATI Infrastructure Delivery</h4>
+        <p class="project-meta">Valenture Institute</p>
+        <p>Led end-to-end AWS infrastructure setup for ATI (Academy of Technology &amp; Innovation), a new school expansion. Established dedicated AWS Organization accounts, built a Terraform deployment pathway, and coordinated with external partner Silicon Overdrive.</p>
+        <p class="project-tags">AWS Organizations &middot; Terraform &middot; GitHub</p>
+      </div>
+
+      <div class="project">
+        <div class="project-icon icon-blue">&#128172;</div>
+        <h4>Self-Service ITSM Portal</h4>
+        <p class="project-meta">TransUnion</p>
+        <p>Self-service support portal integrated with Remedy ITSM using embedded FAQs and troubleshooting guides, standardising submissions across a 6-country voice operation and reducing manual support workload.</p>
+        <p class="project-tags">Remedy ITSM &middot; Knowledge Base</p>
+      </div>
+
+      <div class="project">
+        <div class="project-icon icon-green">&#128273;</div>
+        <h4>NICOR ERP Workflow Support &amp; Disaster Recovery</h4>
+        <p class="project-meta">Excellerate Property Services</p>
+        <p>Supported NICOR procurement and lease approvals workflows end to end across banking, accounts, finance, procurement, leasing, accounts payable, and accounts receivable. Acted as designated Disaster Recovery owner, keeping DR documentation audit-ready.</p>
+        <p class="project-tags">NICOR ERP &middot; Disaster Recovery</p>
+      </div>
+
+      <div class="project">
+        <div class="project-icon icon-amber">&#9993;</div>
+        <h4>Tenant Statements Email Distribution</h4>
+        <p class="project-meta">Excellerate Property Services</p>
+        <p>Coordinated the implementation of automated tenant statement email distribution via the NICOR ERP system and SMTP integration, eliminating all manual distribution processes.</p>
+        <p class="project-tags">NICOR &middot; SMTP Integration</p>
+      </div>
+
+      <div class="project">
+        <div class="project-icon icon-navy">&#128194;</div>
+        <h4>Enterprise Document Migration</h4>
+        <p class="project-meta">Excellerate Property Services</p>
+        <p>Led enterprise document migration to a new intranet platform, recreating folder structures and configuring department-specific access controls, with zero business disruption and full data integrity.</p>
+        <p class="project-tags">Intranet Platform &middot; Access Controls</p>
+      </div>
     </div>
-
-    <!-- TRANSUNION -->
-    <div class="job">
-      <h4>System Administrator, FUSE Team – TransUnion | Jun 2022 – Jan 2025</h4>
-
-      <ul>
-        <li>Delivered Tier 1 to Tier 3 systems administration and application support for global voice operations across 6 countries: USA, Costa Rica, India, South Africa, Philippines, and Colombia</li>
-        <li>Administered and troubleshot AWS EC2, Amazon Connect CCP, Salesforce CRM, AVAYA, Buster, and CRS+ across multi-region environments</li>
-        <li>Owned incidents and service requests end-to-end in Remedy ITSM, maintaining SLA compliance and performing Root Cause Analysis on recurring issues with preventative action</li>
-        <li>Managed end-to-end user onboarding, access provisioning, system permissions, and database privilege assignment across all platforms</li>
-        <li>Served as second-level escalation point for incident and service request management, coordinating with internal engineering teams and third-party vendors</li>
-        <li>Developed and documented operational processes and procedures, establishing consistent multi-level support protocols across global teams</li>
-      </ul>
-
-      <p><b>Key Achievement:</b></p>
-      <ul>
-        <li>Developed a self-service ITSM portal integrated with Remedy using embedded FAQs and troubleshooting guides, automating ticket creation and standardising submissions across 6 countries, which reduced manual support workload</li>
-      </ul>
-    </div>
-
-    <!-- EXCELLERATE -->
-    <div class="job">
-      <h4>IT Business Analyst – Excellerate Property Services | May 2012 – May 2022</h4>
-
-      <ul>
-        <li>Progressed from second-line support, to a systems analyst, to hybrid IT Business Analyst over 10 years, supporting enterprise systems and driving process improvements across a large multi-branch property management organisation</li>
-        <li>Provided L1 to L3 application support for ERP systems (NICOR, MDA) and SAP (junior) across multiple business units, investigating and troubleshooting functional and technical issues to resolution</li>
-        <li>Supported the NICOR procurement workflow end-to-end, covering order creation, attachment verification, goods received note (GRN) processing, partial and full receipt handling, and invoice matching through to completion, working closely with buyers, order administrators, and accounts payable</li>
-        <li>Delivered new user training on NICOR ERP, with particular focus on the procurement workflow, from order creation through to invoice processing</li>
-        <li>Supported the NICOR lease approvals workflow end-to-end, covering application processing, credit vetting, lease approval, exception approvals, offer letter issuance and acceptance, and lease verification, working closely with lease administrators, credit analysts, portfolio managers, and portfolio executives</li>
-        <li>Provided cross-departmental ERP support across banking, accounts, finance, procurement, leasing, accounts payable, and accounts receivable functions</li>
-        <li>Administered user onboarding, offboarding, and access administration across SAP, SAP B1, and ERP systems (NICOR, MDA)</li>
-        <li>Analysed and documented business requirements and conducted UAT and functional test scenarios ahead of go-live deployments</li>
-        <li>Acted as liaison between business units, IT teams, and external vendors, translating operational requirements into technical solutions aligned to business needs</li>
-        <li>Coordinated incidents and service requests against SLA targets, supporting DR testing, vendor management, and post-incident reviews</li>
-        <li>Served as the primary point of contact for external IT audit firms conducting audits on Access Controls and Change Controls across NICOR, SAP ERP, and MDA, ensuring documentation and evidence met audit requirements</li>
-        <li>Acted as the designated Disaster Recovery owner for NICOR, supporting DR audit reviews and ensuring DR documentation and processes remained current and audit-ready</li>
-        <li>Extracted data using SQL SELECT queries to support management reporting and data-driven decision-making</li>
-      </ul>
-
-      <p><b>Key Achievements:</b></p>
-      <ul>
-        <li>Led enterprise document migration to a new intranet platform, recreating folder structures and configuring department-specific access controls, with zero business disruption and full data integrity</li>
-        <li>Coordinated the implementation of automated tenant statement email distribution via the NICOR ERP system and SMTP integration, eliminating all manual distribution processes</li>
-      </ul>
-    </div>
-
-
   </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="card">
-    <h3>🎓 Education & Certifications</h3>
+  <!-- TESTIMONIAL -->
+  <section class="card testimonial-card">
+    <h3>What Others Say</h3>
+    <blockquote class="testimonial">
+      <p>
+        &ldquo;One of Luvuyo's strongest qualities is his reliability and ability to work independently.
+        When given a task, he takes ownership of it and runs with it without needing constant supervision
+        or follow-up&hellip; He is particularly good at investigating technical problems &mdash; he approaches
+        incidents methodically, looks for the underlying cause rather than simply treating the immediate
+        symptoms, and is persistent in finding practical solutions&hellip; Overall, Luvuyo is a dependable,
+        conscientious, technically capable engineer who can be trusted to take ownership of his work.
+        I would happily hire Luvuyo again and gladly recommend him.&rdquo;
+      </p>
+      <footer>&mdash; Norval Geldenhuys, Valenture Institute (Luvuyo's manager for his final six months at the company)</footer>
+    </blockquote>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials" class="card">
+    <h3>Education &amp; Certifications</h3>
 
     <p><b>BSc Honours in Computing</b> | University of South Africa (UNISA) | In Progress, Expected 2027</p>
     <p><b>Advanced Diploma, Information Resource Management</b> | UNISA | 2021</p>
     <p><b>National Diploma, Computer Systems Engineering</b> | University of Johannesburg (UJ) | 2014</p>
     <p><b>AWS Certified Cloud Practitioner</b> | Amazon Web Services | Issued 2024, valid until September 2027</p>
     <p><b>Oracle Fusion Cloud Applications ERP Process Essentials Certified</b> | Oracle | Rel 1, Issued September 2026</p>
+
+    <h4 class="subheading">Credential Documents</h4>
+    <div class="credentials-grid">
+      <a class="credential-card" href="/credentials/aws-cert.jpg" target="_blank">
+        <img src="/credentials/aws-cert.jpg" alt="AWS Certified Cloud Practitioner certificate" />
+        <span>AWS Certified Cloud Practitioner</span>
+      </a>
+      <a class="credential-card" href="/credentials/oracle-cert.jpg" target="_blank">
+        <img src="/credentials/oracle-cert.jpg" alt="Oracle Fusion Cloud Applications ERP Process Essentials certificate" />
+        <span>Oracle Fusion ERP Process Essentials</span>
+      </a>
+      <a class="credential-card" href="/credentials/advanced-diploma.jpg" target="_blank">
+        <img src="/credentials/advanced-diploma.jpg" alt="UNISA Advanced Diploma in Information Resource Management certificate" />
+        <span>Advanced Diploma, UNISA (2021)</span>
+      </a>
+      <a class="credential-card" href="/credentials/national-diploma-redacted.jpg" target="_blank">
+        <img src="/credentials/national-diploma-redacted.jpg" alt="University of Johannesburg National Diploma certificate" />
+        <span>National Diploma, UJ (2014)</span>
+      </a>
+    </div>
+    <p class="credentials-note">Full academic transcripts available on request.</p>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="card">
-    <h3>📫 Contact</h3>
+    <h3>Let's Connect</h3>
+    <p class="section-intro">
+      Looking for an AWS SysOps Engineer or IT Operations specialist who combines cloud automation
+      skills with a decade of ERP and application support experience? Get in touch.
+    </p>
 
-    <p>Portfolio: <a href="https://luvuyo-mnguni-tech-ops.netlify.app">luvuyo-mnguni-tech-ops.netlify.app</a></p>
-    <p>GitHub: <a href="https://github.com/vmnguni">github.com/vmnguni</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/luvuyo-mnguni-80414438">linkedin.com/in/luvuyo-mnguni-80414438</a></p>
-    <p>Email: <a href="mailto:mnguni.luvuyo@gmail.com">mnguni.luvuyo@gmail.com</a></p>
-    <p>References available on request.</p>
+    <div class="contact-grid">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📍 Roodepoort, Gauteng, South Africa</p>
+        <p>📧 <a href="mailto:mnguni.luvuyo@gmail.com">mnguni.luvuyo@gmail.com</a></p>
+        <p>📞 068 289 8792</p>
+        <p>🔗 <a href="https://linkedin.com/in/luvuyo-mnguni-80414438">linkedin.com/in/luvuyo-mnguni-80414438</a></p>
+        <p>💻 <a href="https://github.com/vmnguni">github.com/vmnguni</a></p>
+        <p class="credentials-note">References available on request.</p>
+      </div>
+    </div>
   </section>
 
 </main>
 
-</Layout>
+<footer class="site-footer">
+  <p>&copy; 2026 Luvuyo Mnguni. All rights reserved.</p>
+</footer>
 
 <style>
 
@@ -286,7 +390,6 @@ import Layout from '../layouts/Layout.astro';
 
   background: #0f172a;
   border-bottom: 1px solid #1e293b;
-
   box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
@@ -306,6 +409,7 @@ import Layout from '../layouts/Layout.astro';
   text-decoration: none;
   color: #cbd5e1;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -313,66 +417,158 @@ import Layout from '../layouts/Layout.astro';
 }
 
 .btn {
-  background: #ffffff;
-  color: #0f172a !important;
+  display: inline-block;
+  text-decoration: none;
   padding: 10px 18px;
   border-radius: 8px;
   font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
 }
 
-.btn:hover {
+.navbar .btn {
+  background: #ffffff;
+  color: #0f172a !important;
+}
+
+.navbar .btn:hover {
   background: #e2e8f0;
+}
+
+/* HERO */
+
+.hero {
+  background: radial-gradient(circle at 20% 20%, #1e3a8a 0%, #0f172a 55%, #020617 100%);
+  padding: 100px 20px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: #93c5fd;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin: 0 0 18px 0;
+}
+
+.hero-tagline {
+  color: #cbd5e1;
+  font-size: 17px;
+  max-width: 640px;
+  margin: 0 auto 26px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.pill {
+  background: rgba(255,255,255,0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* STATS */
+
+.stats {
+  background: #0f172a;
+  padding: 0 20px 50px;
+}
+
+.stats-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  transform: translateY(-40px);
+}
+
+.stat {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.stat-num {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 6px;
 }
 
 /* CONTAINER */
 
 .container {
   max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* HERO */
-
-.hero {
-  text-align: center;
-  background: #0f172a;
-  padding: 50px;
-  border-radius: 16px;
-  margin-bottom: 25px;
-
-  box-shadow: 0 10px 25px rgba(15,23,42,0.25);
-}
-
-.profile-img {
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #ffffff;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 8px;
-  color: #ffffff;
-}
-
-.hero h2 {
-  color: #bfdbfe;
-  margin-bottom: 15px;
-}
-
-.tagline {
-  max-width: 850px;
-  margin: auto;
-  color: #cbd5e1;
-}
-
-.contact {
-  margin-top: 15px;
-  color: #94a3b8;
+  margin: -10px auto 0;
+  padding: 0 20px 40px;
 }
 
 /* CARDS */
@@ -380,10 +576,8 @@ import Layout from '../layouts/Layout.astro';
 .card {
   background: white;
   border-radius: 16px;
-
-  padding: 30px;
+  padding: 36px;
   margin-bottom: 25px;
-
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
@@ -392,80 +586,350 @@ import Layout from '../layouts/Layout.astro';
   color: #0f172a;
   border-bottom: 3px solid #1e3a8a;
   padding-bottom: 10px;
+  font-size: 24px;
 }
 
-/* SKILLS / COMPETENCIES */
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.section-intro {
+  color: #64748b;
+  margin-top: -8px;
 }
 
-.grid span {
-  background: #e0e7ff;
-  color: #1e3a8a;
-  border: 1px solid #c7d2fe;
-
-  padding: 8px 12px;
-  border-radius: 8px;
-
-  font-size: 14px;
-  font-weight: 500;
-}
-
-/* EXPERIENCE */
-
-.job {
-  border-left: 4px solid #1e3a8a;
-  padding-left: 20px;
+.subheading {
   margin-top: 25px;
-}
-
-.job h4 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #0f172a;
 }
 
-.job ul {
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 4px solid #e2e8f0;
+}
+
+.about-meta {
+  margin-top: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.about-meta p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: white;
+}
+
+.tag-blue { background: #2563eb; }
+.tag-navy { background: #0f172a; }
+.tag-green { background: #15803d; }
+.tag-amber { background: #b45309; }
+
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #cbd5e1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #2563eb;
+}
+
+.timeline-content h4 {
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
+
+.timeline-meta {
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 13.5px;
+  margin: 0 0 10px 0;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.timeline-content li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* PROJECTS */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.project {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.project-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.icon-blue { background: #2563eb; }
+.icon-navy { background: #0f172a; }
+.icon-green { background: #15803d; }
+.icon-amber { background: #b45309; }
+
+.project h4 {
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
+
+.project-meta {
+  font-size: 12.5px;
+  color: #64748b;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.project p {
+  margin: 0 0 10px 0;
+  font-size: 14.5px;
+}
+
+.project-tags {
+  font-size: 12.5px !important;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .project-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* TESTIMONIAL */
+
+.testimonial-card {
+  background: #0f172a;
+}
+
+.testimonial-card h3 {
+  color: #ffffff;
+  border-bottom-color: #2563eb;
+}
+
+.testimonial {
+  margin: 0;
+  color: #e2e8f0;
+  font-style: italic;
+  font-size: 16px;
+  border-left: 4px solid #2563eb;
+  padding-left: 20px;
+}
+
+.testimonial footer {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #93c5fd;
+  font-size: 14px;
+}
+
+/* CREDENTIALS */
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.credential-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f8fafc;
+  transition: box-shadow 0.15s ease;
+}
+
+.credential-card:hover {
+  box-shadow: 0 6px 16px rgba(15,23,42,0.12);
+}
+
+.credential-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.credential-card span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.credentials-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .credentials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
   margin-top: 10px;
 }
 
-.job li {
-  margin-bottom: 8px;
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form button {
+  margin-top: 18px;
+  align-self: flex-start;
+}
+
+.hidden-field {
+  display: none;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* FOOTER */
+
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+  font-size: 13px;
 }
 
 /* LINKS */
 
 a {
-  color: #1e3a8a;
+  color: #2563eb;
 }
 
 a:hover {
-  color: #1e40af;
+  color: #1d4ed8;
 }
 
-/* MOBILE */
+/* MOBILE NAV */
 
-@media (max-width: 768px) {
-
+@media (max-width: 900px) {
   .navbar {
     flex-direction: column;
     gap: 15px;
   }
-
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .hero h1 {
-    font-size: 30px;
+    font-size: 34px;
   }
-
-  .profile-img {
-    width: 130px;
-    height: 130px;
+  .stats-grid {
+    transform: none;
+    margin-top: 20px;
+  }
+  .container {
+    margin-top: 20px;
   }
 }
 
